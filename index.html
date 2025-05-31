@@ -26,7 +26,7 @@
                 <ul aria-label="Primary" role="list" class="nav-right-lg">
                     <li><a href="#" class="hide-sm">Gmail</a></li>
                     <li><a href="images.html" class="hide-sm">Images</a></li>
-                    <li><a href="#" class="hide-sm"><img src="images/icon-beaker.png" class="beaker"></a></li>
+                    <li><a href="#" class="hide-sm border-none"><img src="images/icon-beaker.png" class="beaker"></a></li>
                     <li><a href="#"><img src="images/icon-dots.png" class="dots"></a></li>
                     <li><a href="#"><img src="images/icon-account.png" class="account"></a></li>
                 </ul>
@@ -45,33 +45,41 @@
                 </h1>
             </div>
 
-                <div class="form-container">
-                    <form action="https://www.google.com/search">
+             <form action="https://www.google.com/search" class="container">
+                    <div class="search-bar">
                         <img src="images/icon-magnifying.png">
                         <input type="text" name="q">
                         <img src="images/icon-mic.png" alt="mic icon">
                         <img src="images/icon-camera.png" alt="camera icon">
+                    </div>
+                    <div class="button-wrapper">
                         <input type="submit" value="Google Search" class="button">
                         <a href="advanced.html" class="button">Advanced Search</a>
-                    </form>
-                </div>
+                    </div>
+            </form>
                 
-                <div class="container">
+                <div class="container padding-block-900">
                     <p>Cheers to 10 years of Google photos adding a little magic to your memories</p>
                 </div>
         </main>
 
         <footer>
-            <p>Applying AI towards science and the environment</p>
-            <nav class="footer-navigation">
-                <ul aria-label="Footer" role="list" class="footer-nav"></ul>
+                <ul aria-label="Footer" role="list" class="footer1 padding-block-300">
                     <li><a href="#">Advertising</a></li>
                     <li><a href="#">Business</a></li>
                     <li><a href="#">How Search Works</a></li>
+                </ul>
+
+                <div class="footer2 padding-block-300">
+                    <img src="images/icon-leaf.png" alt="leaf">
+                    <p>Applying AI towards science and the environment</p>
+                </div>
+
+                <ul aria-label="Footer" role="list" class="footer3 padding-block-300">
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms</a></li>
                     <li><a href="#">Settings</a></li>
-            </nav>
+                </ul>
         </footer>
     </body>
 
