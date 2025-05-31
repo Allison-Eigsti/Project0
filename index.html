@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
+    
     <body>
-        <h1>Google</h1>
-        <form action="https://www.google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-            <input type="submit" value="I'm Feeling Lucky">
-        </form>
+        <header class="primary-header">
+            <nav class="primary-navigation" id="primary-navigation">
+                <ul aria-label="Primary" role="list" class="nav-left-lg hide-sm">
+                    <li><a href="#" class="hide-sm">About</a></li>
+                    <li><a href="#" class="hide-sm">Store</a></li>
+                </ul>
+                <ul aria-label="Primary" role="list" class="nav-left-sm">
+                    <li><a href="#"><img src="images/icon-beaker.png" class="beaker"></a></li>
+                    <li><a href="#">ALL</a></li>
+                    <li><a href="#">IMAGES</a></li>
+                </ul>
+
+                <ul aria-label="Primary" role="list" class="nav-right-lg">
+                    <li><a href="#" class="hide-sm">Gmail</a></li>
+                    <li><a href="images.html" class="hide-sm">Images</a></li>
+                    <li><a href="#" class="hide-sm"><img src="images/icon-beaker.png" class="beaker"></a></li>
+                    <li><a href="#"><img src="images/icon-dots.png" class="dots"></a></li>
+                    <li><a href="#"><img src="images/icon-account.png" class="account"></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="container">
+                <h1>
+                    <span>G</span>
+                    <span class="yellow">o</span>
+                    <span class="red">o</span>
+                    <span>g</span>
+                    <span class="green">l</span>
+                    <span class="red">e</span>
+                </h1>
+            </div>
+
+                <div class="form-container">
+                    <form action="https://www.google.com/search">
+                        <img src="images/icon-magnifying.png">
+                        <input type="text" name="q">
+                        <img src="images/icon-mic.png" alt="mic icon">
+                        <img src="images/icon-camera.png" alt="camera icon">
+                        <input type="submit" value="Google Search" class="button">
+                        <a href="advanced.html" class="button">Advanced Search</a>
+                    </form>
+                </div>
+                
+                <div class="container">
+                    <p>Cheers to 10 years of Google photos adding a little magic to your memories</p>
+                </div>
+        </main>
+
+        <footer>
+            <p>Applying AI towards science and the environment</p>
+            <nav class="footer-navigation">
+                <ul aria-label="Footer" role="list" class="footer-nav"></ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+            </nav>
+        </footer>
     </body>
+
 </html>
