@@ -129,9 +129,12 @@ ul.nav-right-lg{
         padding: 0 .75rem 1rem .75rem;
     }
 
-    ul.nav-left-sm li a:hover {
+    nav ul li:not(:first-child) a:hover {
         border-bottom: 2px solid var(--clr-accent-100);
-        color: var(--clr-accent-100);
+    }
+
+    nav ul li a:hover{
+        border-bottom: none;
     }
 
     .beaker{
@@ -187,6 +190,16 @@ form input{
     border: transparent;
 }
 
+@media (max-width: 50em) {
+    form{
+        padding: 0 1.5em;
+    }
+
+    form input {
+        max-width: 400px;
+    }
+}
+
 form input:focus{
     outline: transparent;
 }
@@ -231,7 +244,14 @@ form input:focus{
 
 footer {
     display: grid;
+    grid-template-areas: "footer1 footer2 footer3";
     background-color: var(--clr-primary-600);
+    align-items: center;
+    line-height: 1em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .footer1 {
@@ -246,20 +266,29 @@ footer {
     grid-area: footer3;
 }
 
-@media (max-width: 50em) {
+.footer2:visited {
+
+}
+
+@media (max-width: 55em) {
     footer {
-        grid-template-areas: "footer2"
-                             "footer1"
-                             "footer3";
+        grid-template-areas: "footer2" "footer1" "footer3";
+    }
+
+    .footer1, 
+    .footer3 {
+        padding-block: var(--size-300);
     }
 }
 
-footer li a{
+footer a{
     color: var(--clr-primary-900);
     text-decoration: none;
+    border-bottom: transparent;
 }
 
-footer li a:hover{
+footer li a:hover,
+footer p:hover {
     border-bottom: 1px solid var(--clr-primary-900);
 }
 
@@ -267,7 +296,7 @@ footer li a:hover{
 .footer3 {
     display: flex;
     justify-content: center;
-    gap: 3em;
+    gap: 1.5em;
 }
 
 .footer2{
@@ -323,6 +352,10 @@ ul {
 
 .green {
     color: var(--clr-accent-700);
+}
+
+.padding-block-100{
+    padding-block: var(--size-100);
 }
 
 .padding-block-300{
