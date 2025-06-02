@@ -21,6 +21,7 @@
 
     --fs-100: .8rem;
     --fs-200: .95rem;
+    --fs-250: 1.15rem;
     --fs-300: 1.5rem;
     --fs-400: 4rem;
     --fs-500: 7rem;
@@ -36,7 +37,7 @@
     --size-900: 5rem;
 }
 
-/* General Styling */
+/* General Home Page Styling */
 *{
     font-family: var(--ff-primary);
     font-size: var(--fs-200);
@@ -366,8 +367,93 @@ ul {
     padding-block: var(--size-900);
 }
 
+/* Google Images webpage styling */
 
-    /*--max-width: 100vw;
-    --padding: .5em;
+body.images nav{
+    justify-content: flex-end;
+}
 
-    width: min(var(--max-width), 100% - var(--padding));*/
+body.images h1{
+    position: relative;
+}
+
+body.images h1::after{
+    content: "Images";
+    font-size: var(--fs-300);
+    position: absolute;
+    top: 4.5em;
+    left: 10.25em;
+}
+
+@media (max-width: 50em) {
+body.images h1::after{
+    content: "Images";
+    position: absolute;
+    font-size: var(--fs-200);
+    top: 4em;
+    left: 10em;
+    }
+}
+
+body.images footer {
+    line-height: 3em;
+}
+
+@media (max-width: 50em) {
+    body.images footer {
+        line-height: 1em;
+    }
+}
+
+/* Advanced Search webpage styling */
+
+body.advanced .logo span{
+    font-size: var(--fs-300);
+    font-weight: var(--fw-semi-bold);
+}
+
+body.advanced .logo a{
+    text-decoration: none;
+}
+
+body.advanced .logo a:visited{
+    color: var(--clr-accent-100);
+}
+
+body.advanced h1{
+    color: var(--clr-accent-300);
+    font-size: var(--fs-300);
+    padding: var(--size-300) var(--size-700);
+    margin-bottom: 0;
+}
+
+body.advanced main{
+    border-top: 1px solid var(--clr-primary-600);
+    margin-top: 0;
+    padding-top: var(--size-600);
+}
+
+body.advanced form{
+    max-width: 900px;
+}
+
+body.advanced legend{
+    font-size: var(--fs-250);
+    font-weight: var(--fw-semi-bold);
+}
+
+body.advanced fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+body.advanced input, 
+body.advanced select{
+    margin-block: var(--size-300);
+}
+
+body.advanced input {
+    border: 1px solid var(--clr-primary-700);
+}
