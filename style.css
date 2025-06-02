@@ -267,10 +267,6 @@ footer {
     grid-area: footer3;
 }
 
-.footer2:visited {
-
-}
-
 @media (max-width: 55em) {
     footer {
         grid-template-areas: "footer2" "footer1" "footer3";
@@ -406,6 +402,9 @@ body.images footer {
 }
 
 /* Advanced Search webpage styling */
+body.advanced .logo {
+    padding-left: var(--size-200);
+}
 
 body.advanced .logo span{
     font-size: var(--fs-300);
@@ -456,4 +455,8 @@ body.advanced select{
 
 body.advanced input {
     border: 1px solid var(--clr-primary-700);
+}
+
+body.advanced footer{
+    line-height: 1em;
 }
