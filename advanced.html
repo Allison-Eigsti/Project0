@@ -25,6 +25,7 @@
             </div>
 
             <ul aria-label="Primary" role="list" class="nav-right-lg">
+                <li><a href="index.html">Google Search</a></li>
                 <li><a href="#"><img src="images/icon-beaker.png" class="beaker"></a></li>
                 <li><a href="#"><img src="images/icon-dots.png" class="dots"></a></li>
                 <li><a href="#"><img src="images/icon-account.png" class="account"></a></li>
@@ -35,7 +36,7 @@
     </header>
 
     <main>
-            <form class="find_pages_with" action="https://www.google.com/advanced_search">
+            <form class="find_pages_with" action="https://www.google.com/search">
                 <fieldset class="find_pages">
                     <legend>Find pages with...</legend>
                     <div class="input_titles">
@@ -47,12 +48,12 @@
                     </div>
 
                     <div class="input_fields">
-                        <input type="text" id="all" name="all">
-                        <input type="text" id="exact" name="exact">
-                        <input type="text" id="any" name="any">
-                        <input type="text" id="none" name="none">
+                        <input type="text" id="all" name="as_q">
+                        <input type="text" id="exact" name="as_epq">
+                        <input type="text" id="any" name="as_oq">
+                        <input type="text" id="none" name="as_eq">
                         <div class="range">
-                            <input type="number" id="range" name="range" class="range"> to <input type="number" id="range" name="range" class="range">
+                            <input type="number" id="range" name="as_nlo" class="range"> to <input type="number" id="range" name="as_nhi" class="range">
                         </div>
                     </div>
                 </fieldset>
@@ -176,7 +177,6 @@
                   <option value="links">in the links to the page</option>
                 </select>
 
-                
                 <select name="file" id="file" placeholder="any format">
                   <option value="any">any format</option>
                   <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
@@ -199,7 +199,7 @@
                 </div>
               </fieldset>
 
-              <input type="submit" value="Advanced Search" id="button-advanced">
+              <input type="submit" value="Advanced Google Search" id="button-advanced">
 
             </form>
         </section>
