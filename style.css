@@ -428,12 +428,50 @@ body.advanced h1{
 
 body.advanced main{
     border-top: 1px solid var(--clr-primary-600);
-    margin-top: 0;
-    padding-top: var(--size-600);
+    padding-top: var(--size-400);
 }
 
 body.advanced form{
-    max-width: 900px;
+    max-width: 100vw;
+    margin: 2em;
+}
+
+body.advanced fieldset{
+    display: grid;
+    grid-template-areas: "titles fields"
+                        "titles2 fields2";
+    grid-template-columns: 1fr 1fr;
+    border: none;
+}
+
+.input-titles {
+    grid-area: titles;
+    }
+    
+.input_titles-2{
+    grid-area: titles2;
+}
+    
+.input_fields{
+    grid-area: fields;
+}
+    
+.input_fields-2{
+    grid-area: fields2;
+}
+
+.input_titles, 
+.input_titles-2,
+.input_fields,
+.input-fields_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+.range input{
+    max-width: 36%;
 }
 
 body.advanced legend{
@@ -441,22 +479,52 @@ body.advanced legend{
     font-weight: var(--fw-semi-bold);
 }
 
-body.advanced fieldset {
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-}
-
 body.advanced input, 
 body.advanced select{
     margin-block: var(--size-300);
+    width: 80%;
+    border-radius: 2px;
 }
 
 body.advanced input {
     border: 1px solid var(--clr-primary-700);
 }
 
+body.advanced select {
+    background-color: var(--clr-primary-400);
+    padding: .45em;
+}
+
 body.advanced footer{
-    line-height: 1em;
+    line-height: 2em;
+}
+
+#button-advanced{
+    background-color: var(--clr-accent-100);
+    color: var(--clr-primary-100);
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-100);
+    padding: .75em;
+    border-radius: 4px;
+    width: 20%;
+    border: 1px solid rgb(69, 100, 255);
+}
+
+#button-advanced:hover {
+    border: 1px solid rgb(17, 17, 186);
+}
+
+aside{
+    margin-bottom: var(--size-900);
+    padding: 1em 3em;
+    border-top: 1px solid var(--clr-primary-600);
+}
+
+aside a{
+    text-decoration: none;
+    font-size: var(--fs-100);
+}
+
+aside a:hover {
+    border-bottom: 1px solid rgb(7, 7, 229);
 }

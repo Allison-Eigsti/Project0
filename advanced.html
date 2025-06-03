@@ -35,35 +35,41 @@
     </header>
 
     <main>
-        <section class=>
-            <form action="https://www.google.com/advanced_search">
+            <form class="find_pages_with" action="https://www.google.com/advanced_search">
                 <fieldset class="find_pages">
                     <legend>Find pages with...</legend>
-                        <label for="all">all these words:</label>
+                    <div class="input_titles">
+                            <label for="all">all these words:</label>
+                            <label for="exact">this exact word or phrase:</label>
+                            <label for="any">any of these words:</label>
+                            <label for="none">none of these words:</label>
+                            <label for="range">numbers ranging from:</label>
+                    </div>
+
+                    <div class="input_fields">
                         <input type="text" id="all" name="all">
-
-                        <label for="exact">this exact word or phrase:</label>
                         <input type="text" id="exact" name="exact">
-
-                        <label for="any">any of these words:</label>
                         <input type="text" id="any" name="any">
-
-                        <label for="none">none of these words:</label>
                         <input type="text" id="none" name="none">
-
-                        <label for="range">numbers ranging from:</label>
-                        <input type="number" id="range" name="range">
-                        <label for="range">to</label>
-                        <input type="number" id="range" name="range">
+                        <div class="range">
+                            <input type="number" id="range" name="range" class="range"> to <input type="number" id="range" name="range" class="range">
+                        </div>
+                    </div>
                 </fieldset>
-            </form>
-        </section>
 
-        <section>
-            <form action="Submit">
                 <fieldset class="narrow_results">
                 <legend>Then narrow your results by...</legend>
-                <label for="language">language:</label>
+                <div class="input_titles-2">
+                    <label for="language">language:</label>
+                    <label for="region">region:</label>
+                    <label for="update">last update:</label>
+                    <label for="site">site or domatin:</label>
+                    <label for="terms">terms appearing:</label>
+                    <label for="file">file type:</label>
+                    <label for="usage">usage rights:</label>
+                </div>
+
+                <div class="input_fields-2">
                 <select name="language" id="language" placeholder="any language">
                   <option value="any language">any language</option>
                   <option value="Afrikaans">Afrikaans</option>
@@ -96,7 +102,7 @@
                   <option value="Yue Chinese (Cantonese)">Yue Chinese (Cantonese)</option>
                 </select>
 
-                <label for="region">region:</label>
+                
                 <select name="region" id="region" placeholder="any region:">
                   <option value="any region">any region</option>
                   <option value="Afghanistan">Afghanistan</option>
@@ -150,7 +156,7 @@
                   <option value="Vietnam">Vietnam</option>
                 </select>
 
-                <label for="update">last update:</label>
+                
                 <select name="update" id="update" placeholder="anytime">
                   <option value="anytime">anytime</option>
                   <option value="24_hours">past 24 hours</option>
@@ -159,10 +165,9 @@
                   <option value="year">past year</option>
                 </select>
 
-                <label for="site">site or domatin:</label>
                 <input type="text" id="site" name="site">
 
-                <label for="terms">terms appearing:</label>
+        
                 <select name="terms" id="terms" placeholder="anywhere in the page">
                   <option value="anywhere">anywhere in the page</option>
                   <option value="title">in the title of the page</option>
@@ -171,7 +176,7 @@
                   <option value="links">in the links to the page</option>
                 </select>
 
-                <label for="file">file type:</label>
+                
                 <select name="file" id="file" placeholder="any format">
                   <option value="any">any format</option>
                   <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
@@ -183,7 +188,7 @@
                   <option value="rtf">Rich Text Format (.rtf)</option>
                 </select>
 
-                <label for="usage">usage rights:</label>
+                
                 <select name="usage" id="usage" placeholder="not filtered by license">
                   <option value="not_filtered">not filtered by license</option>
                   <option value="u_sh">free to use or share</option>
@@ -191,11 +196,21 @@
                   <option value="u_sh_m">free to use, share, or modify</option>
                   <option value="u_sh_m_com">free to use share or modify, even comercially</option>
                 </select>
-
-                <input type="submit" value="Advanced Search" class="button-advanced">
+                </div>
               </fieldset>
+
+              <input type="submit" value="Advanced Search" id="button-advanced">
+
             </form>
         </section>
+
+        <aside>
+            <h2>You can also...</h2>
+            <li><a href="#">Find pages that are similar to a URL</a></li>
+            <li><a href="#">Search pages you've visited</a></li>
+            <li><a href="#">Use operators in the search box</a></li>
+            <li><a href="#">Customize your search settings</a></li>
+        </aside>
 
         <footer>
             <nav class="footer-nav">
