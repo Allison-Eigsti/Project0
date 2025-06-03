@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body class="advanced">
+    <header class="primary-header">
+        <nav class="primary-navigation" id="primary-navigation">
+            <div class="logo">
+                <a href="index.html">
+                    <span>G</span>
+                    <span class="yellow">o</span>
+                    <span class="red">o</span>
+                    <span>g</span>
+                    <span class="green">l</span>
+                    <span class="red">e</span>
+                </a>
+            </div>
+
+            <ul aria-label="Primary" role="list" class="nav-right-lg">
+                <li><a href="#"><img src="images/icon-beaker.png" class="beaker"></a></li>
+                <li><a href="#"><img src="images/icon-dots.png" class="dots"></a></li>
+                <li><a href="#"><img src="images/icon-account.png" class="account"></a></li>
+            </ul>
+        </nav>
+
+        <h1>Advanced Search</h1>
+    </header>
+
+    <main>
+        <section class=>
+            <form action="https://www.google.com/advanced_search">
+                <fieldset class="find_pages">
+                    <legend>Find pages with...</legend>
+                        <label for="all">all these words:</label>
+                        <input type="text" id="all" name="all">
+
+                        <label for="exact">this exact word or phrase:</label>
+                        <input type="text" id="exact" name="exact">
+
+                        <label for="any">any of these words:</label>
+                        <input type="text" id="any" name="any">
+
+                        <label for="none">none of these words:</label>
+                        <input type="text" id="none" name="none">
+
+                        <label for="range">numbers ranging from:</label>
+                        <input type="number" id="range" name="range">
+                        <label for="range">to</label>
+                        <input type="number" id="range" name="range">
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <form action="Submit">
+                <fieldset class="narrow_results">
+                <legend>Then narrow your results by...</legend>
+                <label for="language">language:</label>
+                <select name="language" id="language" placeholder="any language">
+                  <option value="any language">any language</option>
+                  <option value="Afrikaans">Afrikaans</option>
+                  <option value="Arabic">Arabic</option>
+                  <option value="Armenian">Armenian</option>
+                  <option value="Belarusian">Belarusian</option>
+                  <option value="Bengali">Bengali</option>
+                  <option value="Chinese">Chinese</option>
+                  <option value="English">English</option>
+                  <option value="Egyptian Arabic">Egyptian Arabic</option>
+                  <option value="Farsi">Farsi</option>
+                  <option value="German">German</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Indonesian">Indonesian</option>
+                  <option value="Japanese">Japanese</option>
+                  <option value="Korean">Korean</option>
+                  <option value="Marathi">Marathi</option>
+                  <option value="Nigerian Pidgin">Nigerian Pidgin</option>
+                  <option value="Portuguese">Portuguese</option>
+                  <option value="Russian">Russian</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Swahili">Swahili</option>
+                  <option value="Tagalog">Tagalog</option>
+                  <option value="Tamil">Tamil</option>
+                  <option value="Telugu">Telugu</option>
+                  <option value="Turkish">Turkish</option>
+                  <option value="Urdu">Urdu</option>
+                  <option value="Vietnamese">Vietnamese</option>
+                  <option value="Wu Chinese">Wu Chinese</option>
+                  <option value="Yue Chinese (Cantonese)">Yue Chinese (Cantonese)</option>
+                </select>
+
+                <label for="region">region:</label>
+                <select name="region" id="region" placeholder="any region:">
+                  <option value="any region">any region</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="China">China</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+                  <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                  <option value="Egypt">Egypt </option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="France">France</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="India">India</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Iran">Iran</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Morocco">Morocco</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Myanmar">Myanmar</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Mozambique">Poland</option>
+                  <option value="Russia">Russia</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Syria">Syria</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vietnam">Vietnam</option>
+                </select>
+
+                <label for="update">last update:</label>
+                <select name="update" id="update" placeholder="anytime">
+                  <option value="anytime">anytime</option>
+                  <option value="24_hours">past 24 hours</option>
+                  <option value="week">past week</option>
+                  <option value="month">past month</option>
+                  <option value="year">past year</option>
+                </select>
+
+                <label for="site">site or domatin:</label>
+                <input type="text" id="site" name="site">
+
+                <label for="terms">terms appearing:</label>
+                <select name="terms" id="terms" placeholder="anywhere in the page">
+                  <option value="anywhere">anywhere in the page</option>
+                  <option value="title">in the title of the page</option>
+                  <option value="text">in the text of the page</option>
+                  <option value="URL">in the URL of the page</option>
+                  <option value="links">in the links to the page</option>
+                </select>
+
+                <label for="file">file type:</label>
+                <select name="file" id="file" placeholder="any format">
+                  <option value="any">any format</option>
+                  <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                  <option value="ps">Adobe Postscript (.ps)</option>
+                  <option value="dwf">Autodesk DWF (.dwf)</option>
+                  <option value="xls">Microsoft Excel (.xls)</option>
+                  <option value="ppt">Microsoft PowerPoint (.ppt)</option>
+                  <option value="doc">Microsoft Word (.doc)</option>
+                  <option value="rtf">Rich Text Format (.rtf)</option>
+                </select>
+
+                <label for="usage">usage rights:</label>
+                <select name="usage" id="usage" placeholder="not filtered by license">
+                  <option value="not_filtered">not filtered by license</option>
+                  <option value="u_sh">free to use or share</option>
+                  <option value="u_sh_com">free to use or share, even comercially</option>
+                  <option value="u_sh_m">free to use, share, or modify</option>
+                  <option value="u_sh_m_com">free to use share or modify, even comercially</option>
+                </select>
+
+                <input type="submit" value="Advanced Search" class="button-advanced">
+              </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <nav class="footer-nav">
+                <ul aria-label="Footer" role="list" class="footer3">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+    
+</body>
+</html>
